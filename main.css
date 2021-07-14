@@ -1,0 +1,25 @@
+:root {
+    --background-color: #fff;
+    --accent-color: #fe2c55;
+    --text-color: #161823;
+    --accent-text-color: #fff;
+    --border-color: #345A59;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    height: 6vh;
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--border-color);
+}
+
+main {
+
+}

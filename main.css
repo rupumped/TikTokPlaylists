@@ -21,5 +21,30 @@ header {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
+#button_wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#button_wrapper input {
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
+    border: none;
+    font-size: x-large;
+    padding: 10px;
+    margin: 1px;
+}
+#button_wrapper input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

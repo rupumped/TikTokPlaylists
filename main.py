@@ -1,6 +1,6 @@
 from TikTokApi import TikTokApi
 from TikTokApi.tiktok import BASE_URL
-import webbrowser, os, re
+import webbrowser, os, re, sys
 
 def compress(num):
     return num
@@ -18,9 +18,7 @@ def compress(num):
 
 api = TikTokApi()
 
-username = 'rupumped'
-n_videos = 1000
-liked_videos = api.userLikedbyUsername(username, count=n_videos)
+liked_videos = api.userLikedbyUsername(str(sys.argv[1]), count=10000)
 liked_videos.reverse()
 
 # url = 'file:///home/nick/GitHub/TikTokPlaylists/index.html'
@@ -47,8 +45,6 @@ for vid in liked_videos:
         pl_names.append(new_name)
         pl_lists.append([vid['id']])
     elif inp.upper() == 'X':
-        for i, pl in enumerate(pl_names):
-            print('{}: {}?{}&{}'.format(pl, url, pl, '&'.join(map(compress, pl_lists[i])) ))
         break
     elif inp.isdigit():
         inp = int(inp)
@@ -62,3 +58,6 @@ for vid in liked_videos:
         break
 
     os.system('clear')
+
+for i, pl in enumerate(pl_names):
+    print('{}: {}?{}&{}'.format(pl, url, pl, '&'.join(map(compress, pl_lists[i])) ))

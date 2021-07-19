@@ -16,8 +16,10 @@ def compress(num):
         
     # return hexadecimal
 
+print('Loading API...')
 api = TikTokApi()
 
+print('Collecting liked videos from account...')
 liked_videos = api.userLikedbyUsername(str(sys.argv[1]), count=10000)
 liked_videos.reverse()
 
@@ -29,6 +31,10 @@ pl_names = []
 pl_lists = []
 first_flag = True
 skip_flag = len(sys.argv)>2
+if skip_flag:
+    print('Searching for starting point...')
+else:
+    print('Opening browser...')
 for vid in liked_videos:
     if skip_flag:
         if vid['id']==str(sys.argv[2]):

@@ -24,7 +24,7 @@ liked_videos = api.userLikedbyUsername(username, count=n_videos)
 liked_videos.reverse()
 
 # url = 'file:///home/nick/GitHub/TikTokPlaylists/index.html'
-url = 'https://rupumped.github.io/TikTokPlaylist/index.html'
+url = 'https://rupumped.github.io/TikTokPlaylists/index.html'
 alphanumeric = re.compile(r'[^a-zA-Z0-9 \-]')
 
 pl_names = []

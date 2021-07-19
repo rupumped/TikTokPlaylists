@@ -2,7 +2,7 @@
 Create playlists from your liked videos on TikTok.
 
 ## Creating a playlist
-Before you begin, you need to install the TikTokAPI:
+Before you begin, you need to install the TikTok API:
 ```
 $ pip install TikTokApi
 $ python -m playwright install

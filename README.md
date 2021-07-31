@@ -1,5 +1,5 @@
 # TikTokPlaylists
-Create playlists from your liked videos on TikTok.
+Create playlists from your liked videos on TikTok. Example: https://tinyurl.com/djs59xau
 
 ## Creating a playlist
 Before you begin, you need to install the TikTok API:

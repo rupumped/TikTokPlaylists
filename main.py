@@ -20,7 +20,7 @@ print('Loading API...')
 api = TikTokApi()
 
 print('Collecting liked videos from account...')
-liked_videos = api.userLikedbyUsername(str(sys.argv[1]), count=10000)
+liked_videos = api.user_liked_by_username(str(sys.argv[1]), count=10000)
 liked_videos.reverse()
 
 # url = 'file:///home/nick/GitHub/TikTokPlaylists/index.html'

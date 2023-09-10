@@ -1,4 +1,4 @@
-NOTE: This repository is deprecated in favor of TikTok's new [collections](https://www.makeuseof.com/how-to-create-tiktok-collections/) feature.
+NOTE: This repository is deprecated in favor of TikTok's new [collections](https://www.makeuseof.com/how-to-create-tiktok-collections/) feature. I have unpublished the GitHub Pages site.
 
 # TikTokPlaylists
 Create playlists from your liked videos on TikTok. Example: https://tinyurl.com/djs59xau
